@@ -1,0 +1,407 @@
+
+<!DOCTYPE html><html><head>
+<title>Ticket_Maker</title>
+<style>
+.hide_me {
+  display: none;
+  
+  
+}
+
+
+.mybuttons {
+  border: 2px solid lightblue;
+  width: 500px;
+  margin-left: 30%;
+  padding: 5px;  
+}
+.bot_answer {
+  margin-left: 30%;
+  background-color: lightblue;
+  color: black;
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+  
+
+}
+
+body {
+  border: 2px solid black;
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+  height: 100%;
+  
+}
+
+.header {
+  
+  padding: 30px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+.header h1 {
+  color: white;
+  text-align: center;
+}
+
+.main h2 {
+  margin-left: 40%;
+}
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  
+}
+.footer em {
+  color: black;
+  background-color: gold;
+  padding: 4px;
+  border: 2px solid white;
+}
+.mail {
+  background-color:black;
+  color:white;
+  padding: 2px;
+}
+
+/* Mobile */
+
+/* to Make suitable for mobile view */
+
+@media only screen and (max-width: 600px) {
+  .mybuttons {
+    border: 2px solid lightblue;
+    width: 400px;
+    margin-left: 2%;
+    padding: 5px;  
+  }
+  .bot_answer {
+    margin-left: 2%;
+    background-color: lightblue;
+    color: black;
+    width: 350px;
+    text-align: center;
+    font-weight: bold;   
+  
+  
+  }
+  
+  .main h2 {
+    margin-left: 2%;
+  }
+  
+  .header h1 {
+  color: blue;
+  background-color: gold;
+  width: 300px;
+  margin-left: 20%;
+}
+}
+</style>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-75065234-3', 'auto');
+			ga('send', 'pageview', '/unmindfulwrasse.html');
+		</script>
+		<script>
+		window.goatcounter = {
+			path: '/unmindfulwrasse.html'
+		};
+		</script>
+		<script data-goatcounter="https://htmlpasta.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script></head>
+<body> 
+
+<div class="header" id="myHeader">
+<h1>Ticket Maker</h1>
+</div>
+
+<div class="main">
+
+              <h2>CST IS Calling From?</h2>
+
+<div class="mybuttons">
+
+<button type="button" onclick="myFunction()">Land Line</button>
+<button type="button" onclick="myFunction1()">From Mobile</button>
+</div>
+<p id="demo" class="bot_answer"></p>
+<script>
+function myFunction() { 
+
+  document.getElementById("demo").innerHTML = "verify The number";
+  var adsl = document.getElementById("adsl_number");
+  var another = document.getElementById("another_number");
+  var cst = document.getElementById("customer");
+  var nonCST = document.getElementById("none_cst");
+
+  adsl.style.display = "inline";
+  another.style.display = "inline";
+  cst.style.display = "none";
+  nonCST.style.display = "none";
+
+}
+</script>
+
+<script>
+function myFunction1() { 
+
+  document.getElementById("demo").innerHTML = "Ask Customer For ADSL Number and query it";
+  var cst = document.getElementById("customer");
+  var nonCST = document.getElementById("none_cst");
+  var adsl = document.getElementById("adsl_number");
+  var another = document.getElementById("another_number");
+  cst.style.display = "inline";
+  nonCST.style.display = "inline";
+  adsl.style.display = "none";
+  another.style.display = "none";
+
+}
+</script>
+</div>
+
+<div>
+
+<div class="mybuttons">
+
+<button class="hide_me" id="adsl_number" type="button" onclick="myFunction2()">Adsl Number </button>
+<button class="hide_me" id="another_number" type="button" onclick="myFunction3()">Another Number</button>
+
+<button class="hide_me" id="customer" type="button" onclick="myFunction02()">our Customer </button>
+<button class="hide_me" id="none_cst" type="button" onclick="myFunction03()">None-customer</button>
+
+</div>
+
+<p id="demo1" class="bot_answer"></p>
+<script>
+function myFunction2() { 
+
+  document.getElementById("demo1").innerHTML = "Verfiy The Number with customer";
+  var same = document.getElementById("samde_number");
+  var def = document.getElementById("defernt");
+  var cst = document.getElementById("customer");
+  var nonCST = document.getElementById("none_cst");
+
+  same.style.display = "inline";
+  def.style.display = "inline";
+  cst.style.display = "none";
+  nonCST.style.display = "none";
+ 
+}
+</script>
+
+<script>
+function myFunction3() { 
+
+  document.getElementById("demo1").innerHTML = "ask customer for landLine";
+  var cst = document.getElementById("customer");
+  var nonCST = document.getElementById("none_cst");
+  var adsl = document.getElementById("adsl_number");
+  var another = document.getElementById("another_number");
+  cst.style.display = "inline";
+  nonCST.style.display = "inline";
+  adsl.style.display = "none";
+  another.style.display = "none";
+  
+}
+</script>
+
+
+<script>
+function myFunction02() { 
+ 
+  document.getElementById("demo1").innerHTML = "Verfiy The Number with customer";
+  var same = document.getElementById("samde_number");
+  var def = document.getElementById("defernt");
+  var cst = document.getElementById("customer");
+  var nonCST = document.getElementById("none_cst");
+  var newCST = document.getElementById("new_cst");
+  var old = document.getElementById("old_land");
+
+  same.style.display = "inline";
+  def.style.display = "inline";
+  newCST.style.display = "none";
+  old.style.display = "none";
+
+
+ 
+}
+</script>
+
+<script>
+function myFunction03() { 
+ 
+  document.getElementById("demo1").innerHTML = "Ask CST IF he Is new CST";
+  var newCST = document.getElementById("new_cst");
+  var old = document.getElementById("old_land");
+  var same_num = document.getElementById("samde_number");
+  var def_num = document.getElementById("defernt");
+  
+  newCST.style.display = "inline";
+  old.style.display = "inline";
+  same_num.style.display = "none";
+  def_num.style.display = "none";
+  
+  
+
+}
+
+function myFunction05() { 
+ 
+  document.getElementById("demo2").innerHTML = "Transfer to Sales 5660";
+
+  var old = document.getElementById("old_land");
+  
+
+  old.style.display = "none";
+  
+
+}
+
+function myFunction06() { 
+ 
+  document.getElementById("demo2").innerHTML = "Transfer to Account support team at : 5660";
+
+  var newcst = document.getElementById("new_cst");
+  
+
+  newcst.style.display = "none";
+  
+
+}
+
+
+</script>
+
+
+</div>
+
+<div class="mybuttons">
+
+<button class="hide_me" id="new_cst" type="button" onclick="myFunction05()">New Customer</button>
+
+<button class="hide_me" id="old_land" type="button" onclick="myFunction06()">no, said he is old </button>
+
+<button class="hide_me" id="samde_number" type="button" onclick="myFunction5()">same number</button>
+<button class="hide_me" id="defernt" type="button" type="button" onclick="myFunction6()">Defernt</button>
+
+<button class="hide_me" id="customer1" type="button" onclick="myFunction02()">our Customer </button>
+<button class="hide_me" id="none_cst1" type="button" onclick="myFunction02()">None-customer</button>
+
+</div>
+
+<p id="demo2" class="bot_answer"></p>
+
+<div class="mybuttons">
+
+<button class="hide_me" id="btn1" type="button" onclick="special1()">Browsing</button>
+<button class="hide_me" id="btn2" type="button" onclick="special2()">Slowness</button>
+<button class="hide_me" id="btn3" type="button" onclick="special3()">L-Instabilty</button>
+<br/><br/>
+<button class="hide_me" id="btn4" type="button" onclick="special4()">P-Instabilty</button>
+<button class="hide_me" id="btn5" type="button" onclick="special5()">DataDown</button>
+<button class="hide_me" id="btn6" type="button" onclick="special6()">BLQ</button>
+<br/> <br/>
+<button class="hide_me" id="btn7" type="button" onclick="special7()">Other</button>
+
+</div>
+
+<script>
+/* Links function*/
+function special1() { 
+   
+   document.getElementById("demo3").innerHTML = "Vist This Link: " +
+   " <a title='will open secure page help you to solve browsing problem.' href='https://www.google.com/search?q=how+to+solve+browsing+internet+problem&rlz=1C1VFKB_enEG755EG755&oq=how+to+solve+browsing+internet+problem&aqs=chrome..69i57j33l7.8272j0j7&sourceid=chrome&ie=UTF-8' target='_blank'>Browsing</a>";
+}
+function special2() {    
+   document.getElementById("demo3").innerHTML = "Vist This Link: " + 
+   "<a title='will open secure page help you to solve Logical speed problem.' href='https://www.google.com/search?rlz=1C1VFKB_enEG755EG755&sxsrf=ALeKk00SMlX2hTcIW0GUAFgTUXaw7wZGhw%3A1582486584922&ei=ONRSXrf6N8uAhbIPx4CV-Ag&q=how+to+solve+slowness+internet+problem&oq=how+to+solve+slowness+internet+problem&gs_l=psy-ab.3...45756.49250..49697...5.0..1.198.3080.0j17......0....1..gws-wiz.......35i39j0i8i30j0i7i30i19j0i19j0i8i7i30.LEtP-ssZZCw&ved=0ahUKEwi39oX2tejnAhVLQEEAHUdABY8Q4dUDCAs&uact=5' target='_blank'>Slowness</a>";
+}
+function special3() { 
+   document.getElementById("demo3").innerHTML = "Vist This Link: " +
+   "<a title='will open secure page help you to solve Logical Instability problem.' href='https://www.quora.com/What-is-the-best-way-to-fix-my-unstable-internet-connection' target='_blank'>Logical Instabilty</a>";
+}
+function special4() { 
+   document.getElementById("demo3").innerHTML = "Vist This Link: " + 
+   " <a title='will open secure page help you to solve pyhsical Instability problem.' href='https://www.howtogeek.com/231887/htg-explains-how-to-troubleshoot-your-intern' target='_blank'>Pychisal Instabilty</a>";
+   
+}function special5() { 
+   document.getElementById("demo3").innerHTML = "Vist This Link: " + 
+   " <a title='will open secure page would help you to solve no connection problem.' href='https://www.wikihow.com/Fix-Your-Internet-Connection' target='_blank'>Data Down</a>";
+   
+}
+function special6() { 
+    document.getElementById("demo3").innerHTML = "Vist This Link: " + 
+    " <a title='will open secure page help you to solve pyhsical speed problem.' href='https://www.rogers.com/customer/support/article/fix-internet-speed-issues' target='_blank'>BLQ</a>";
+}
+function special7() { 
+    document.getElementById("demo3").innerHTML = "Vist This Link: " +
+    " <a title='search google for the problem it opens google.' href='https://www.google.com/' target='_blank'>Other</a>";
+}
+
+</script>
+
+
+<script>
+function myFunction5() { 
+  var btn = document.getElementById("btn1");
+  var btn1 = document.getElementById("btn2");
+  var btn2 = document.getElementById("btn3");
+  var btn3 = document.getElementById("btn4");
+  var btn4 = document.getElementById("btn5");
+  var btn5 = document.getElementById("btn6");
+  var btn6 = document.getElementById("btn7");
+  
+  document.getElementById("demo2").innerHTML = "What is the customer Problem?"; 
+  btn.style.display = "inline";
+  btn1.style.display = "inline";
+  btn2.style.display = "inline";
+  btn3.style.display = "inline";
+  btn4.style.display = "inline";
+  btn5.style.display = "inline";
+  btn6.style.display = "inline";
+}
+</script>
+
+<script>
+function myFunction6() {
+  var newQuestion1 = document.getElementById("question2");
+  var btn = document.getElementById("btn1");
+  var btn1 = document.getElementById("btn2");
+  var btn2 = document.getElementById("btn3");
+  var btn3 = document.getElementById("btn4");
+  var btn4 = document.getElementById("btn5");
+  var btn5 = document.getElementById("btn6");
+  var btn6 = document.getElementById("btn7");
+  
+  document.getElementById("demo2").innerHTML = "esclate voice over lapping take genrete to it"; 
+  btn.style.display = "none";
+  btn1.style.display = "none";
+  btn2.style.display = "none";
+  btn3.style.display = "none";
+  btn4.style.display = "none";
+  btn5.style.display = "none";
+  btn6.style.display = "none";
+}
+</script>
+
+
+<p id="demo3" class="bot_answer"></p>
+
+
+<div class="footer" id="myFooter">
+<em style="float:left;">Developed By : Mahmoud Hegazy!</em>
+
+<em style="float:right;">Gmail: <span class="mail"><b>1mahmoud.hegazy@gmail.com</b></span></em>
+<br/><br/>
+</div>
+
+
+</body></html>
